@@ -1,0 +1,214 @@
+main {
+	background: #18E5FF;
+	margin: 10px auto;
+	width: 100%;
+}
+section {
+	background: #81E8E2;
+	margin: 0 auto 53px;
+	width: 98%;
+}
+section article {
+	background: white;
+	float: left;
+	width: 60%;
+}
+section aside {
+	background: #E0EFFF;
+	float: right;
+	width: 35%;
+    margin-top: 10px;
+}
+header {
+	padding: 0.8em 5.33333333%;
+}
+.warning {
+  background: #FFFF00;
+}
+#debug {
+  background: #E5E0FF;
+  word-wrap: break-word;
+}
+#die_sizer {
+  margin: 1em 1em 1em 1em;
+}
+
+hr.fancyHR {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+#side_header {
+  width: 100%;
+}
+#side_header h2 {
+  float: left;
+}
+#history_form {
+  float: right;
+}
+#last_rolls {
+  margin: 0.5em;
+  clear: both;
+}
+ol#last_list {
+  counter-reset: li -1;
+  padding-left: 0.5em;
+}
+ol#last_list li {
+  list-style:none;
+}
+ol#last_list li:before {
+  content:"L-"counter(li)" : ";
+  counter-increment:li;
+}
+#sizer-handle {
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+#help_dialog {
+  columns: 2 280px;
+}
+#your_dice {
+  columns: 2 150px;
+}
+input.orange {
+  border-color: #FFA500;
+}
+input.blue {
+  border-color: #0000FF;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: auto;
+	position: static;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 0;
+	border-top: 0;
+	overflow: auto;
+}
+.ui-helper-reset {
+    line-height: normal;
+    font-size: 100%;
+}
+.ui-widget {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 1em;
+}
+.ui-tabs {
+  padding: 0;
+}
+.ui-tabs .ui-tabs-panel {
+  padding: 0.5em;
+}
+.ui-dialog {
+  padding: 0;
+}
+#stats_tab h3 {
+  margin: 2px 0 2px 0;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  background: #E0EFFF;
+}
+th, td {
+  padding: 3px 7px 3px 7px;
+}
+thead {
+  background-color: #CDE1FF;
+}
+th {
+  background-color: #ADCEFF;
+}
+.Q {
+  width: 13px;
+  height: 13px;
+}
+.H {
+  width: 25px;
+  height: 25px;
+}
+.T {
+  width: 37px;
+  height: 37px;
+}
+.F {
+  width: 49px;
+  height: 49px;
+}
+.die {
+  position: relative;
+  display: inline-block;
+}
+.die span {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+}
+.SS span.hold {
+  display: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557" height="557" width="557"> <g> <rect fill="red" fill-opacity="0.27" stroke="red" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" stroke-dasharray="none" width="547" height="547" x="5" y="5" rx="67.690636" /> <text font-size="210px" font-style="normal" font-variant="normal" font-weight="normal" font-stretch="normal" line-height="125%" letter-spacing="0px" word-spacing="0px" fill="red" fill-opacity="1" stroke="none" font-family="sans-serif" > <tspan y="278" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan> </text> </g> </svg>') no-repeat;
+  background-size: cover;
+}
+.SS span.free:hover {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557" height="557" width="557"> <g> <rect fill="green" fill-opacity="0.27" stroke="green" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" stroke-dasharray="none" width="547" height="547" x="5" y="5" rx="67.690636" /> <text font-size="210px" font-style="normal" font-variant="normal" font-weight="normal" font-stretch="normal" line-height="125%" letter-spacing="0px" word-spacing="0px" fill="green" fill-opacity="1" stroke="none" font-family="sans-serif" > <tspan y="278" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan> </text> </g> </svg>') no-repeat;
+  background-size: cover;
+}
+.SR span.hold {
+  display: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557" height="557" width="557"> <g> <rect fill="red" fill-opacity="0.27" stroke="red" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" stroke-dasharray="none" width="547" height="547" x="5" y="5" rx="181.5" /> <text font-size="210px" font-style="normal" font-variant="normal" font-weight="normal" font-stretch="normal" line-height="125%" letter-spacing="0px" word-spacing="0px" fill="red" fill-opacity="1" stroke="none" font-family="sans-serif" > <tspan y="278" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan> </text> </g> </svg>') no-repeat;
+  background-size: cover;
+}
+.SR span.free:hover {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557" height="557" width="557"> <g> <rect fill="green" fill-opacity="0.27" stroke="green" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" stroke-dasharray="none" width="547" height="547" x="5" y="5" rx="181.5" /> <text font-size="210px" font-style="normal" font-variant="normal" font-weight="normal" font-stretch="normal" line-height="125%" letter-spacing="0px" word-spacing="0px" fill="green" fill-opacity="1" stroke="none" font-family="sans-serif" > <tspan y="278" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan> </text> </g> </svg>') no-repeat;
+  background-size: cover;
+}
+.TS span.hold {
+  display: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(5,42)" fill="red" fill-opacity="0.27" stroke="red" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="274,0 0,473 547,473"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="red"><tspan font-size="210px" y="338" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
+.TS span.free:hover {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(5,42)" fill="green" fill-opacity="0.27" stroke="green" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="274,0 0,473 547,473"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="green"><tspan font-size="210px" y="338" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
+.KS span.hold {
+  display: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(41.5,5)" fill="red" fill-opacity="0.27" stroke="red" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="237,0 474,410.5 237,547 0,410.5"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="red"><tspan font-size="210px" y="338" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
+.KS span.free:hover {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(41.5,5)" fill="green" fill-opacity="0.27" stroke="green" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="237,0 474,410.5 237,547 0,410.5"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="green"><tspan font-size="210px" y="338" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
+.PS span.hold {
+  display: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(5,32)" fill="red" fill-opacity="0.27" stroke="red" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="274,-14 0,185 104,506 443,506 547,185"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="red"><tspan font-size="210px" y="298" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
+.PS span.free:hover {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557"> <g><polygon transform="translate(5,32)" fill="green" fill-opacity="0.27" stroke="green" stroke-width="10" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" points="274,-14 0,185 104,506 443,506 547,185"></polygon></g><g><text letter-spacing="0px" word-spacing="0px" font-weight="normal" font-style="normal" font-family="sans-serif" line-height="125%" fill="green"><tspan font-size="210px" y="298" x="278" text-anchor="middle" dominant-baseline="central">Hold</tspan></text></g></svg>');
+  background-size: cover;
+}
